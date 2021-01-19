@@ -1,0 +1,19 @@
+{
+  "name": "aventador",
+  "version": "1.0.0",
+  "description": "Docsify",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "docs":"docsify serve docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@work:Aventador-lab/aventador-lab.github.io.git"
+  },
+  "author": "",
+  "license": "MIT"
+}
