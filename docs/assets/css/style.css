@@ -33,3 +33,7 @@ section.cover.has-mask .mask {
 section.cover .cover-main {
     color: #fff;
 }
+
+section.cover .cover-main>p:last-child a:last-child {
+    background-color: var(--theme-color,#42b983);
+}
