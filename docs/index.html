@@ -54,7 +54,8 @@
         alias: {
           // '/cn/(+*)': '/cn/$1',
           "/.*/_coverpage.md": "/_coverpage.md",
-          "/.*/_navbar.md": "/_navbar.md",
+          "/*/_navbar.md": "/zh-cn/_navbar.md",
+          "/.*/_navbar.md": "_navbar.md"
         },
         plugins: [
           function (hook, vm) {

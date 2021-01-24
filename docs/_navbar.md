@@ -1,0 +1,4 @@
+- Translations
+  - [:cn: 简体](/zh-cn/)
+  - [:uk: English](/uk/)
+  - [:taiwan: 繁體](/tw/)
