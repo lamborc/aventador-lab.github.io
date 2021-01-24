@@ -13,6 +13,11 @@ https://developers.weixin.qq.com/miniprogram/dev/framework/ability/network.html
 
 
 
+### 重点 API
+
+- 新增 API NFC 支持读写 反馈详情 v2.11.2 (2020-06-08)
+
+- miniprogram-sm-crypto 2.2.1 以上版本 (2018.07.23)
 
 
 ### 实例

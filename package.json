@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "docs":"docsify serve docs",
+    "docs": "docsify serve docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +15,8 @@
     "url": "git@work:Aventador-lab/aventador-lab.github.io.git"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^3.6.3"
+  }
 }
