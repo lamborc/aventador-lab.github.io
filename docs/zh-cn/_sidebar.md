@@ -3,3 +3,5 @@
 - [**MongoDB**](zh-cn/mongodb/)
 - [**Web**](zh-cn/web/)
 - [**Nginx**](zh-cn/nginx/)
+- [**Nodejs**](zh-cn/nodejs/)
+- [**Git**](zh-cn/git/)

@@ -23,3 +23,7 @@ https://developers.weixin.qq.com/miniprogram/dev/framework/ability/network.html
 ### 实例
 
 https://github.com/wuyinlei/WXNewsAndMovie
+
+
+### rpx 
+iphone 6 : 1rpx = 0.5px
