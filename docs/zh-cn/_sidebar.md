@@ -1,7 +1,7 @@
-
 - [**Centos Series**](zh-cn/centos/)
 - [**MongoDB**](zh-cn/mongodb/)
 - [**Web**](zh-cn/web/)
 - [**Nginx**](zh-cn/nginx/)
 - [**Nodejs**](zh-cn/nodejs/)
 - [**Git**](zh-cn/git/)
+- [**Extension**](zh-cn/extension/)
