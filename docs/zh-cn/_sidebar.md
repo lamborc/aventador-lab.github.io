@@ -5,3 +5,4 @@
 - [**Nodejs**](zh-cn/nodejs/)
 - [**Git**](zh-cn/git/)
 - [**Extension**](zh-cn/extension/)
+- [**Design**](zh-cn/designed/)
