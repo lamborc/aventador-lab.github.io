@@ -23,3 +23,18 @@ npm run build
 
 LavaMoat的目标是为现代JavaScript应用程序带来更多保护，而无需从头开始重写它们并自动执行良好的首次安全配置
 ```
+
+
+## React Extension 快速模板
+
+> [原文链接](https://levelup.gitconnected.com/how-to-build-a-rich-chrome-extension-quickly-with-create-react-app-and-redux-d9b64cf64832)
+
+
+### 操作脚本
+
+**环境要求**
+> node8.10+
+
+```bash
+npx create-react-app qkext-complex-react-demo --template complex-browser  # 创建项目
+```

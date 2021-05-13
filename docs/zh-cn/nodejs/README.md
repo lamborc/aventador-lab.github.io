@@ -65,3 +65,12 @@ npm install --registry=https://registry.npm.taobao.org      # 单次使用源
 npm config set registry https://registry.npmjs.org/         # 还原 npm 源
 yarn install --force                                        # 强制重新下载所有包
 ```
+
+
+### NPM
+
+> npm 常用
+
+```bash
+
+```

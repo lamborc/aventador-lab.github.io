@@ -2,6 +2,7 @@
 - [**MongoDB**](zh-cn/mongodb/)
 - [**Web**](zh-cn/web/)
   - [**JIT**](zh-cn/web/javascript-runtime.md)
+  - [**React**](zh-cn/web/react-guide.md)
 - [**Nginx**](zh-cn/nginx/)
 - [**Nodejs**](zh-cn/nodejs/)
 - [**Git**](zh-cn/git/)
