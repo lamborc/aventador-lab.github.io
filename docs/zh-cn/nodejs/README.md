@@ -74,3 +74,18 @@ yarn install --force                                        # 强制重新下载
 ```bash
 
 ```
+
+### Node-sass ISSUE
+
+> install failed .
+
+```bash
+npm i -g node-sass --sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
+```
+
+### Browserlist query 
+
+```bash 
+ npx browserslist "last 1 version, >1%"
+
+```

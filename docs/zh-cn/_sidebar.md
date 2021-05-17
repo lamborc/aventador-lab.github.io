@@ -1,4 +1,5 @@
 - [**Centos Series**](zh-cn/centos/)
+  - [**Common Configuration**](zh-cn/centos/index.md)
 - [**MongoDB**](zh-cn/mongodb/)
 - [**Web**](zh-cn/web/)
   - [**JIT**](zh-cn/web/javascript-runtime.md)
