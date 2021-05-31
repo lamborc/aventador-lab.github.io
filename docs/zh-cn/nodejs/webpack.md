@@ -6,3 +6,7 @@ https://cli.vuejs.org/zh/guide/webpack.html#%E5%AE%A1%E6%9F%A5%E9%A1%B9%E7%9B%AE
 > vue inspect module.rules.0  :只审查第一条规则
 
 > vue inspect --rule vue :指向一个规则或插件的名字
+
+### Webpack + Babel-plugin-import 按需加载
+
+> Deps: babel-plugin-import

@@ -89,3 +89,15 @@ npm i -g node-sass --sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
  npx browserslist "last 1 version, >1%"
 
 ```
+
+### Typescript Project 
+
+> tsconfig.json  
+
+```json
+{
+  outdir:'/dist' , // 当此属性不配置时,VScode 可能会出现无法覆盖问题
+
+}
+
+```
