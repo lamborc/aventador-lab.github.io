@@ -54,12 +54,14 @@ git tag -l 'v1.0.*' # 过滤
 
 #### Checkout from tag and fixed bug workflow
 
+> commit -a 参数可以将所有已跟踪文件中的执行修改或删除操作的文件都提交到本地仓库，即使它们没有经过git add添加到暂存区,建议先 git add ./ 再 git commit -m 'comments'
+
 ```bash
 git tag -l                                  # 列出分支 
 git checkout v3.0.2                         # checkout tag 
 git checkout -b 3.0.2                       # create local fixed bug branch 
 git diff develop  src/xxx/xxx.js            # 对比文件差异
-git commit -m "fixed bug #xxx" -a           # fixed bug and commit branch
+git commit -m "fixed bug #xxx"              # fixed bug and commit branch
 git checkout develop                        #
 git pull                                    # let develop Keep consistent remote
 git merge 3.0.2                             # 合并分支 
