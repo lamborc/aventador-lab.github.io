@@ -2,6 +2,7 @@
   - [**Common Configuration**](zh-cn/centos/index.md)
 - [**MongoDB**](zh-cn/mongodb/)
 - [**Web**](zh-cn/web/)
+  - [**SSL**](zh-cn/web/lets-encrypt-cert.md)
   - [**JIT**](zh-cn/web/javascript-runtime.md)
   - [**React**](zh-cn/web/react-guide.md)
   - [**Webpack**](zh-cn/web/webpack.md)
