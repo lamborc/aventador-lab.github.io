@@ -6,6 +6,7 @@
   - [**JIT**](zh-cn/web/javascript-runtime.md)
   - [**React**](zh-cn/web/react-guide.md)
   - [**Webpack**](zh-cn/web/webpack.md)
+  - [**Chrome Manifest V3**](zh-cn/web/chrome-extension.md)
 - [**Nginx**](zh-cn/nginx/)
 - [**Nodejs**](zh-cn/nodejs/)
 - [**Git**](zh-cn/git/)
