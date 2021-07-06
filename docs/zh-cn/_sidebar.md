@@ -10,5 +10,6 @@
 - [**Nginx**](zh-cn/nginx/)
 - [**Nodejs**](zh-cn/nodejs/)
 - [**Git**](zh-cn/git/)
+- [**Go In Action**](zh-cn/go/go-inaction.md)
 - [**Extension**](zh-cn/extension/)
 - [**Design**](zh-cn/designed/)

@@ -87,4 +87,37 @@ git push origin v1.0.2                      # 上传tag到远程
  git tag -s v1.5 -m 'my signed 1.5 tag'
  ```
  
-  
+  -------
+
+## .gitconfig 用户级git配置
+
+> ~/.gitconfig (对于unix 还有系统级 /etc/.gitconfig)
+
+> 项目级配置文件 .get/config 
+
+> git remote add origin https://github.com/xxx/abc.git 是向配置中设置远程仓库地址.
+
+### 如果你通过ssh公钥访问私有仓库，记得配置git拉取私有仓库时使用ssh
+
+> 可以通过命令git config ...的方式来配置
+
+> ~/.gitconfig
+
+```bash
+git config url."git@xxx:abc/cd".insteadof "https://github.com/abc/cd"  添加到
+
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+[url "git@gitlab.com:"]
+    insteadOf = https://gitlab.com/
+```
+
+### 配置Proxy 
+
+> 设置代理
+
+```bash
+git config  http.proxy socks5://127.0.0.1:1080
+
+git config --global --unset http.proxy  # 取消代理
+```
