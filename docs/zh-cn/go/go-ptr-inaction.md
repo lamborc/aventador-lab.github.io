@@ -101,3 +101,27 @@ func main() {
   fmt.Printf(x,y)           // 输出:2 1
 }
 ```
+
+## make vs new
+
+  - **make** 的作用是初始化内置的数据结构，也就是我们在前面提到的切片、哈希表和 Channel；
+  - **new** 的作用是根据传入的类型分配一片内存空间并返回指向这片内存空间的指针
+
+> make
+
+```golang
+slice := make([]int, 0, 100)      // slice 是一个包含 data、cap 和 len 的结构体
+hash := make(map[int]bool, 10)    // hash 是一个指向 runtime.hmap 结构体的指针
+ch := make(chan int, 5)           // ch 是一个指向 runtime.hchan 结构体的指针；
+```
+
+> new
+
+```golang
+i := new(int)
+
+var v int
+i := &v
+```
+
+![](../../assets/img/go/golang-make-and-new.png)

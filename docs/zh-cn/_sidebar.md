@@ -14,5 +14,6 @@
   - [**Go语法基础**](zh-cn/go/go-base-inaction.md)
   - [**指针**](zh-cn/go/go-ptr-inaction.md)
   - [**容器**](zh-cn/go/go-container-inaction.md)
+  - [**哈希表**](zh-cn/go/go-hashmap-inaction.md)
 - [**Extension**](zh-cn/extension/)
 - [**Design**](zh-cn/designed/)
