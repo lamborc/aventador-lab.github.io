@@ -37,3 +37,5 @@ section.cover .cover-main {
 section.cover .cover-main>p:last-child a:last-child {
     background-color: var(--theme-color,#42b983);
 }
+
+td::before { display: none }

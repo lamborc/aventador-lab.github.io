@@ -125,3 +125,14 @@ i := &v
 ```
 
 ![](../../assets/img/go/golang-make-and-new.png)
+
+#### 字符串运行时指针 
+
+> 因为 Cat 结构体的定义中只包含一个字符串，而字符串在 Go 语言中总共占 16 字节，所以每一个 Cat 结构体的大小都是 16 字节。初始化 Cat 结构体之后就进入了将 *Cat 转换成 Duck 类型的过程了：
+
+![](../../assets/img/go/golang-new-struct-pointer.png)
+
+```language
+LEAQ  go.itab.*"".Cat,"".Duck(SB), AX    ;; AX = *itab(go.itab.*"".Cat,"".Duck)
+MOVQ  DI, (SP)                           ;; SP = AX
+```
