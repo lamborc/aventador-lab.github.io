@@ -16,6 +16,7 @@
   - [**容器**](zh-cn/go/go-container-inaction.md)
   - [**哈希表**](zh-cn/go/go-hashmap-inaction.md)
   - [**接口与反射**](zh-cn/go/go-interface-inaction.md)
+  - [**signal**](zh-cn/go/go-ossignal-inaction.md)
 - [**ProtoBuf**](zh-cn/google-protobuf.md)
 - [**Extension**](zh-cn/extension/)
 - [**Design**](zh-cn/designed/)
