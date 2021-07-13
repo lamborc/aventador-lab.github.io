@@ -269,3 +269,21 @@ func main(){
 go run main.go --mode=fast # 输出 fast
 ```
   
+### 函数内代码块
+
+> 函数内代码块控制作用域
+
+```golang
+func test() {
+  x : = 1;
+
+  fmt.Printf('x value: %d',x)     // 1
+  
+  {
+    x : = 2     // 旨在作用域内有效
+    fmt.Printf('x value: %d',x)   // 2
+  } 
+
+  fmt.Printf('x value: %d',x)     // 1
+}
+```

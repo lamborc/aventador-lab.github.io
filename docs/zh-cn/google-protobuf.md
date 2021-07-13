@@ -282,3 +282,5 @@ int32 不应该是 4 个字节吗？这里是 ProtoBuf 基于兼容性的考虑�
 > ZigZag 编码：有符号整数映射到无符号整数，然后再使用 Varints 编码
 
 ![](../../assets/img/google/protobuf-zigzag.png)
+
+ZigZag 编码的思维不难理解，既然负数的 Varints 编码效率很低，那么就将负数映射到正数，然后对映射后的正数进行 Varints 编码。解码时，解出正数之后再按映射关系映射回原来的负数.
