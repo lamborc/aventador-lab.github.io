@@ -153,3 +153,15 @@ volumes:
   // 已经存在的命名的数据卷。
   - datavolume:/var/lib/mysql
 ```
+
+#### networks
+
+> 加入指定网络，格式如下
+
+```yml
+services:
+  some-service:
+    networks:
+     - some-network
+     - other-network
+```
