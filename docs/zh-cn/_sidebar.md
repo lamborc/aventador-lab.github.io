@@ -14,6 +14,7 @@
 - [**Nodejs**](zh-cn/nodejs/)
   - [**Node Packages**](zh-cn/nodejs/packages.md)
   - [**Eslint**](zh-cn/nodejs/eslint.md)
+  - [**Desktop App Development**](zh-cn/nodejs/desktop-app.md)
 - [**Git**](zh-cn/git/)
 - [**Go In Action**](zh-cn/go/)
   - [**Go语法基础**](zh-cn/go/go-base-inaction.md)
