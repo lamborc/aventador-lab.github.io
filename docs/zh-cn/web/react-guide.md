@@ -33,4 +33,8 @@ my-app
     └── serviceWorker.js
     └── setupTests.js
 
+# ISSUE
+
+## vscode jsx 注释失效 
+> 由于babel ES6/ES7 插件,换成 Babel javascript
 
