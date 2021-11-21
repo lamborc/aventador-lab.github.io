@@ -44,6 +44,29 @@ fix(DAO):用户查询缺少username属性
 feat(Controller):用户查询接口开发
 ```
 
+---
+# Git reset back commit hash
+
+
+## 方式一
+> Git 回滚: 强制 push 方式
+
+- 0: 如本地有未提交代码,可git checkout -b for-reset-tmp && git add . && git commit -am 'xxxx' && git checkout current branch
+- 1: git pull 保证本地与remote 一致
+- 2: 备份当前分支(如有必要)
+- 3: git log [--pretty=online] 查找要回复的hash
+- 4: git reset --hard <commit hash>
+- 5: git push -f origin <branch name>  # 强制更新远程分支
+
+## 方式二
+
+> 从回滚位置生成新的commit hash, 
+
+- 0: 如本地有未提交代码,可git checkout -b for-reset-tmp && git add . && git commit -am 'xxxx' && git checkout current branch
+- 1: git pull   # 保证当前工作区是干净的，并且和远程分支代码一致
+- 2: 备份分支(如有必要)
+- 3: git revert 
+
 ### git set proxy
 
 ```bash
