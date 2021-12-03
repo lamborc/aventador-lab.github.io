@@ -65,7 +65,8 @@ feat(Controller):用户查询接口开发
 - 0: 如本地有未提交代码,可git checkout -b for-reset-tmp && git add . && git commit -am 'xxxx' && git checkout current branch
 - 1: git pull   # 保证当前工作区是干净的，并且和远程分支代码一致
 - 2: 备份分支(如有必要)
-- 3: git revert 
+- 3: git revert <hash> # 不加 --no-commit 生成新的hash
+- 4: git push
 
 ### git set proxy
 
