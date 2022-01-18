@@ -17,6 +17,10 @@
   - [**Eslint**](zh-cn/nodejs/eslint.md)
   - [**Desktop App Development**](zh-cn/nodejs/desktop-app.md)
 - [**Git**](zh-cn/git/)
+  - [**Git Base**](zh-cn/git/git-base.md)
+  - [**Git Messages 规范**](zh-cn/git/commit-standard.md)
+  - [**Git branch & rollback**](zh-cn/git/branch-rollback.md)
+  - [**GUN Grivacy Guard**](zh-cn/git/gpg.md)
 - [**Go In Action**](zh-cn/go/)
   - [**Go语法基础**](zh-cn/go/go-base-inaction.md)
   - [**指针**](zh-cn/go/go-ptr-inaction.md)
@@ -30,5 +34,6 @@
 - [**Design**](zh-cn/designed/)
 - [**Block Chain**](blockchain/)
   - [**Ethereum 2.0**](blockchain/ethereum-2x-base.md)
+  - [**Polygons**](blockchain/polygons/base.md)
 - [**Security**]
   - [**OAuth 2.0**](Authentication/oauth-2.0.md)

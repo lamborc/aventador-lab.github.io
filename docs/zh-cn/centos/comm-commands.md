@@ -23,4 +23,19 @@ sudo ls -al /root | sudo tee /root/test.txt > /dev/null  # sudo ls -al /root | s
 ```
 
 其中**> /dev/null** 阻止 tee 把内容输出到终端.
+
+## 基础命令
+
+### 权限相关
+
+- 更改文件或目录所属用户组
+
+```bash
+chgrp -R <user> <dir> 
+chown -R own:user <dir>
+```
+
+  - R 表示递归
+
+
  
