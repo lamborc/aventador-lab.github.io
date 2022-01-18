@@ -1,4 +1,4 @@
-## GUN Privacy Guard
+# GUN Privacy Guard
 
 |symbol| Capability /Usage| Description|
 | :--: | :--: | :-- | 
