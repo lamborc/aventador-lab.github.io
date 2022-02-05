@@ -9,7 +9,10 @@ cat /etc/redhat-rlease
 
 ### 查看文件权限数值
 
+```bash
 stat -c '%n %a %U:%G' . * 
+chmod 600 authorized_keys  
+```
 
 ### Tee
 

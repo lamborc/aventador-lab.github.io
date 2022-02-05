@@ -6,6 +6,7 @@
 - [**MongoDB**](zh-cn/mongodb/)
 - [**Web**](zh-cn/web/)
   - [**SSL**](zh-cn/web/lets-encrypt-cert.md)
+  - [**SSL Apply**](zh-cn/web/latest_ssl_apply.md)
   - [**JIT**](zh-cn/web/javascript-runtime.md)
   - [**React**](zh-cn/web/react-guide.md)
   - [**Webpack**](zh-cn/web/webpack.md)
@@ -35,5 +36,6 @@
 - [**Block Chain**](blockchain/)
   - [**Ethereum 2.0**](blockchain/ethereum-2x-base.md)
   - [**Polygons**](blockchain/polygons/base.md)
+  - [**Solana**](blockchain/solana/README.md)
 - [**Security**]
   - [**OAuth 2.0**](Authentication/oauth-2.0.md)
