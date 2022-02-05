@@ -64,3 +64,41 @@ Solana Cluster的應用例子包括，追蹤哪些電腦可以正常運作，追
 - 已發布的確認將作為共識算法的投票
 
 ![](../../assets/img/blk/Screenshot-2020-08-13-at-1.32.49-PM.png)
+
+
+## Serum 
+
+> The Serum ecosystem is a diverse collection of innovative decentralised applications building upon the Serum order book and matching engine architecture.
+
+Serum 生态系统是基于 Serum 订单簿和匹配引擎架构的创新去中心化应用程序的多样化集合。
+
+#### Serum Order Book Shared Liquidity Model
+
+![](../../assets/img/blk/Serum-Shared-Liquidity-Model.png)
+
+> Maker Volume
+
+- Point & Click Traders trading on DEX GUIs
+
+- Automated Market Makers
+
+- High Frequency Trading Firms(高频交易)
+
+> Taker Volume
+
+- Point & Click Traders trading on DEX GUIs
+
+- Ecosystem Applications using Swaps
+
+- High Frequency Trading Firms
+
+
+#### Serum Trading GUIs
+
+> Anyone can set up their own state-of-the-art Serum-based DEX GUI or embed the Serum Swapper into their UI.
+Each trading interface that interacts with Serum is free to customize their user experience and restrictions to comply with the regulations of their target market.
+
+
+## Wormhole V2
+
+![](../../assets/img/blk/worehole.svg)

@@ -37,5 +37,6 @@
   - [**Ethereum 2.0**](blockchain/ethereum-2x-base.md)
   - [**Polygons**](blockchain/polygons/base.md)
   - [**Solana**](blockchain/solana/README.md)
+  - [**Solana Whitepaper**](blockchain/solana/whitepaper.md)
 - [**Security**]
   - [**OAuth 2.0**](Authentication/oauth-2.0.md)
