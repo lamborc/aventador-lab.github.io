@@ -68,6 +68,8 @@ Solana Cluster的應用例子包括，追蹤哪些電腦可以正常運作，追
 
 ## Serum 
 
+> 对应的Ethereum 体系的DeFi,解决Defi 交易慢,贵的问题
+
 > The Serum ecosystem is a diverse collection of innovative decentralised applications building upon the Serum order book and matching engine architecture.
 
 Serum 生态系统是基于 Serum 订单簿和匹配引擎架构的创新去中心化应用程序的多样化集合。

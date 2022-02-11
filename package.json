@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "docs": "docsify serve docs -p 3725 -P 61358",
+    "docs": "docsify serve docs -p 63725 -P 61358",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

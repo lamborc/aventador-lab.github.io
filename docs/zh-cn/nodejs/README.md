@@ -1,5 +1,22 @@
 # Nodejs
 
+## NPM 常用 Commands
+
+> pm install或npm update命令，从 registry 下载压缩包之后，都存放在本地的缓存目录。
+
+> npm 常用
+
+```bash
+npm cache clean --force # 
+yarn cache clean 
+```
+
+
+|  Definition | Description |
+| :--: | -- |
+| --mirror | Remove the global cache files instead of the local cache files |
+| --all | Remove both the global cache files and the local cache files of the current project|
+
 ## yarn command
 
 ### yarn add local
@@ -67,13 +84,7 @@ yarn install --force                                        # 强制重新下载
 ```
 
 
-### NPM
 
-> npm 常用
-
-```bash
-
-```
 
 ### Node-sass ISSUE
 
