@@ -35,6 +35,7 @@
 - [**Design**](zh-cn/designed/)
 - [**Block Chain**](blockchain/)
   - [**Ethereum 2.0**](blockchain/ethereum-2x-base.md)
+  - [**MetaMask**](blockchain/metamask.md)
   - [**Polygons**](blockchain/polygons/base.md)
   - [**Solana**](blockchain/solana/README.md)
   - [**Solana Whitepaper**](blockchain/solana/whitepaper.md)

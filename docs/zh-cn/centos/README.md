@@ -22,6 +22,7 @@ nodejs 目录 : /usr/src/node14
 ```bash
 NODE_HOME=/usr/src/node14
 PATH=$PATH:$NODE_HOME/bin
+
 ```
 
 **load source** 设置生效
@@ -29,3 +30,15 @@ PATH=$PATH:$NODE_HOME/bin
 ```bash
 source /etc/profile
 ```
+
+#### JAVA Configuration
+
+> add java.sh into /etc/profile.d/
+
+```bash
+export JAVA_HOME=/usr/local/jdk1.8
+export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar 
+export PATH=:$JAVA_HOME/bin:$PATH
+```
+
+ ** source /etc/profile

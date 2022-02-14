@@ -8,6 +8,8 @@
 
 ```bash
 npm cache clean --force # 
+npm config get <key>  # 
+npm config get cache # 获取cache dir path 
 yarn cache clean 
 ```
 
@@ -111,4 +113,19 @@ npm i -g node-sass --sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
 
 }
 
+```
+
+### OpenSSL SSL_connect: Connection was reset in connection to github.com:443
+https://blog.csdn.net/qq_37555071/article/details/114260533
+
+```bash
+git config http.sslBackend "openssl"
+git config http.sslCAInfo "C:\Program Files\Git\mingw64\ssl\cert.pem"
+
+git config https.proxy http://127.0.0.1:80808
+git config http.proxy 'socks5://127.0.0.1:10808'
+git config https.proxy 'socks5://127.0.0.1:10808'
+
+git config --unset https.proxy # cancle proxy
+git config --unset http.proxy
 ```
