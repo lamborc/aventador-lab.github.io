@@ -1,5 +1,14 @@
 # Git Base Commands
 
+## 管理远程仓库
+
+> git remote -v
+
+```bash
+git remote -v  # Verify new remote
+git remote set-url <--add|--push|--delete> origin url
+```
+
 #### Fork project sync origin
 
 - git remote -v : check [origin:本地, upstream:远程]
@@ -50,3 +59,7 @@ git config url."git@xxx:abc/cd".insteadof "https://github.com/abc/cd"  添加到
 [url "git@gitlab.com:"]
     insteadOf = https://gitlab.com/
 ```
+
+### 修改 hosts 文件方式
+
+> windows ipconfig /flushdns 可使修改立即生效

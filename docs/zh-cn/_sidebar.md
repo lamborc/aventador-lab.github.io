@@ -34,6 +34,7 @@
 - [**Extension**](zh-cn/extension/)
 - [**Design**](zh-cn/designed/)
 - [**Block Chain**](blockchain/)
+  - [**Financial knowlege**](blockchain/Financial-wiki.md)
   - [**Ethereum 2.0**](blockchain/ethereum-2x-base.md)
   - [**MetaMask**](blockchain/metamask.md)
   - [**Polygons**](blockchain/polygons/base.md)

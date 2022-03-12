@@ -69,13 +69,46 @@
 - Symbol: HT
 - exporole: https://scan-testnet.hecochain.com
 
-> Heco-test
+#### Heco-test
 
 - RPC URL: https://http-testnet.hecochain.com
 - chainid: 256
 - Symbol: HT
 - exporole: https://scan-testnet.hecochain.com
 
+#### Polygon Testnet mumbai
+- RPC URL: https://rpc-mumbai.maticvigil.com/
+- chainid: 80001
+- Symbol: MATIC
+- exporole: https://mumbai.polygonscan.com/
+
+  - The VRF Coordinator(协调员) for Mumbai Testnet:0x8C7382F9D8f56b33781fE506E897a4F1e2d17255
+  - Token LINK:0x326C977E6efc84E512bB9C30f76E30c160eD06FB
+  - The KeyHash for Mumbai Testnet: 0x6e75b569a01ef56d18cab6a8e71e6600d6ce853834d4a5748b720d06f878b3a4
+  - he fee for making a VRF request on the Mumbai Testnet is : 00000000000000 (0.0001 LINK)
+  
+#### Polygon Mainnet 
+- name : Polygon Mainnet
+- RPC URL: https://polygon-rpc.com/
+- chainid: 137
+- Symbol: MATIC
+- exporole: https://polygonscan.com/
+
+### NEAR Aurora Mainnet
+
+- name : Aurora Mainnet
+- RPC URL: https://mainnet.aurora.dev
+- chainid: 1313161554
+- Symbol: ETH
+- exporole: https://aurorascan.dev/
+
+### NEAR Aurora Testnet
+
+- name : Aurora Testnet
+- RPC URL: https://testnet.aurora.dev
+- chainid: 1313161555
+- Symbol: ETH
+- exporole: https://testnet.aurorascan.dev/
 
 #### Sign
 
