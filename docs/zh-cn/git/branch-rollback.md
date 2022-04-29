@@ -11,7 +11,67 @@
   - git push --set-upstream origin sol5     //管理本地默认推送分支，直接git push
   - git push origin :newBranch          //通过推送空分支的方式删除远程分支
   - git push origin --delete newBranch      //删除远程分支
+  
 ```
+
+### git stash
+
+> stash 命令能够将还未 commit 的代码存起来，让你的工作目录变得干净。
+
+> 某一天你正在 feature 分支开发新需求，突然产品经理跑过来说线上有bug，必须马上修复。而此时你的功能开发到一半，于是你急忙想切到 master 分支
+
+```bash
+# 保存当前未commit的代码
+git stash
+
+# 保存当前未commit的代码并添加备注
+git stash save "备注的内容"
+
+# 列出stash的所有记录
+git stash list
+
+# 删除stash的所有记录
+git stash clear
+
+# 应用最近一次的stash
+git stash apply
+
+# 应用最近一次的stash，随后删除该记录
+git stash pop
+
+# 删除最近的一次stash
+git stash drop
+
+# 当有多条 stash，可以指定操作stash，首先使用stash list 列出所有记录
+git stash list 
+
+# 应用第二条记录
+git stash apply stash@{1}
+···
+
+### reset --soft
+
+> 回退你已提交的 commit，并将 commit 的修改内容放回到暂存区。
+一般我们在使用 reset 命令时，git reset --hard 会被提及的比较多，它能让 commit 记录强制回溯到某一个节点。而 git reset --soft 的作用正如其名，--soft (柔软的) 除了回溯节点外，还会保留节点的修改内容。
+
+> 规范些的团队，一般对于 commit 的内容要求职责明确，颗粒度要细，便于后续出现问题排查。本来属于两块不同功能的修改，一起 commit 上去，这种就属于不规范。这次恰好又手滑了，一次性 commit 上去。
+
+```bash
+# 恢复最近一次 commit
+git reset --soft HEAD^
+
+# commit 记录有 c、b、a。
+# reset 到a
+git reset --soft 1a900ac29eba73ce817bf959f82ffcb0bfa38f75
+
+# 此时的 HEAD 到了 a，而 b、c 的修改内容都回到了暂存区
+
+···
+
+### cherry-pick
+> 给定一个或多个现有提交，应用每个提交引入的更改，为每个提交记录一个新的提交。这需要您的工作树清洁（没有从头提交的修改）
+
+[教程](https://juejin.cn/post/7071780876501123085?share_token=fa5bbdb2-554f-4359-8bae-dfb15a5f3085)
 
 ### git Tag 
 
