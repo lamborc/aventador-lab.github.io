@@ -72,3 +72,18 @@ cd nginx-1.20.1
 yum -y install pcre-devel openssl openssl-devel
 ```
 
+### Vim
+
+- 注释多行
+1、首先，将光标放在要注释的行首，然后按ESC进入命令行模式;
+2、按Ctrl + V进入 VISUAL BLOCK ；
+3、按 PgUp/PgDn选择要注释的行；
+4、按大写的i进入插入模式；
+5、输入#,按ESC保存即可
+
+- 删除多行
+1、首先，将光标放在注释的行首，然后按ESC进入命令模式；
+2、按Ctrl + V进入 VISUAL BLOCK；
+3、按PgUp选择要删除的注释行；
+4、按X即可删除第一列#；
+5、如果有多个"#",重复上述步骤

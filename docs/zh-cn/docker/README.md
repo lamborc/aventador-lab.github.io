@@ -10,3 +10,14 @@
 
 >> containerd 是一个守护程序，它管理容器生命周期，提供了在一个节点上执行容器和管理镜像的最小功能集
 
+
+## Window Sub linux
+
+> WSL copy local into WSL (ubuntu)
+
+```bash
+sudo ls /mnt
+cd /mnt/d/iwork
+
+sudo cp xxx.zip /data/
+```
