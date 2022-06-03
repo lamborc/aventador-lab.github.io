@@ -1,6 +1,27 @@
 # Nginx
+> Centos 开放端口 
 
+# 查看防火墙规则
+firewall-cmd --list-all
 
+# 查询端口是否开放
+firewall-cmd --query-port=8080/tcp
+# 开放80端口
+firewall-cmd --permanent --add-port=80/tcp
+# 移除端口
+firewall-cmd --permanent --remove-port=8080/tcp
+#重启防火墙(修改配置后要重启防火墙)
+firewall-cmd --reload
+```
+
+- 添加port
+
+```bash 
+firewall-cmd --zone=public --add-port=80/tcp --permanent
+firewall-cmd --zone=public --add-port=443/tcp --permanent
+firewall-cmd --zone=public --add-port=37000-39999/tcp --permanent
+firewall-cmd --zone=public --add-port=37000-39999/udp --permanent
+firewall-cmd --reload
 ### 
 
 - Template
@@ -142,6 +163,8 @@ ln -s /var/lib/snapd/snap /snap # 创建链接（snap软件包一般安装在/sn
 sudo snap install core     # 
 sudo snap refresh core     # 
 ```
+
+
 
 - 申请证书
 ```bash

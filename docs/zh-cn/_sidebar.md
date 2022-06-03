@@ -12,6 +12,7 @@
   - [**Webpack**](zh-cn/web/webpack.md)
   - [**Chrome Manifest V3**](zh-cn/web/chrome-extension.md)
   - [**Styles CSS3**](zh-cn/web/styles-wiki.md)
+  - [**Website Optimization**](zh-cn/web/web-optimization.md)
 - [**Nginx**](zh-cn/nginx/)
 - [**Nodejs**](zh-cn/nodejs/)
   - [**Node Packages**](zh-cn/nodejs/packages.md)

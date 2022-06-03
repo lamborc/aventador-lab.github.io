@@ -191,3 +191,63 @@ var compiler = webpack(config, function (err, stats) {
 	}
 );
 ```
+
+### Webpack 捆绑的工作原理
+
+> 假设 Webpack 配置中有一个叫作 main.js 的文件被指定为入口点，那么它就是依赖图的根。这个文件要导入的每个 JS 模块都将成为图的叶子，而这些叶子中导入的每个模块都将成为叶子的叶子
+
+<div align="center">
+    <img width="550px" src="/assets/img/webpack-source-work.png" />
+</div>
+
+### 动态导入
+
+使用 Webpack 动态导入（ https://webpack.js.org/guides/code-splitting/）来加载应用程序的某些部分
+
+
+- 标准的 JS 模块导入
+
+```js
+// main.js
+import ModuleA from './module_a.js'
+ModuleA.doStuff()
+
+```
+
+  它将作为 main.js 的叶子被添加到依赖图中，并被捆绑到捆绑包中。
+  
+  
+```js
+//main.js
+const getModuleA = () => import('./module_a.js')
+// invoked as a response to some user interaction
+getModuleA()
+  .then({ doStuff } => doStuff())
+
+```
+
+创建了一个返回 import() 函数的函数，而不是直接导入 module_a.js。现在 Webpack 会将动态导入模块的内容捆绑到一个单独的文件中，除非调用了这个函数，否则 import() 也不会被调用，也就不会下载这个文件。在后面的代码中，我们下载了这个可选的代码块，作为对某些用户交互的响应。
+通过使用动态导入，我们基本上隔离了将被添加到依赖图中的叶子（在这里是 module_a），并在需要时下载它（这意味着我们也切断了在 module_a.js 中导入的模块）。
+
+
+- 看另一个可以更好地说明这种机制的例子
+
+假设我们有 4 个文件：main.js、module_a.js、module_b.js 和 module_c.js。要了解动态导入的原理，我们只需要 main 和 module_a 的源代码
+
+```js
+//main.js
+import ModuleB from './mobile_b.js'
+const getModuleA = () => import('./module_a.js')
+getModuleA()
+  .then({ doStuff } => doStuff()
+)
+//module_a.js
+import ModuleC from './module_c.js'
+
+```
+
+通过让 module_a 成为一个动态导入的模块，可以让 module_a 及其所有子文件从依赖图中分离。当 module_a 被动态导入时，其中导入的所有子模块也会被加载
+
+<div align="center">
+    <img width="550px" src="/assets/img/optimization/lazy-import.png" />
+</div>

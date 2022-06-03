@@ -23,7 +23,7 @@ sudo snap refresh core     #
 sudo snap install --classic certbot
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
 sudo certbot --nginx  # 自动申请证书
-sudo certbot  -d www.baschain.cn   # 手动申请证书
+sudo certbot  -d blog.lanbery.cc   # 手动申请证书
 ```
 
 

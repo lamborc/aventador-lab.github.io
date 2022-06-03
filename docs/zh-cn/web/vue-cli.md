@@ -18,3 +18,7 @@ gzip on;
 
 - vue-cli4 [webpack4 ] compression-webpack-plugin 
 > compression-webpack-plugin 6.1 
+
+
+### Vue Optimization
+
