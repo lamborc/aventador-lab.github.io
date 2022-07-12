@@ -87,3 +87,11 @@ yum -y install pcre-devel openssl openssl-devel
 3、按PgUp选择要删除的注释行；
 4、按X即可删除第一列#；
 5、如果有多个"#",重复上述步骤
+
+### Docker Nginx
+
+!/bin/bash
+NGINX_DIR=`pwd`
+docker stop nginx
+docker rm nginx
+docker run -d --restart always -p 80:80 --name nginx --privileged=true -v /opt/nft-service:/data/java -v ${NGINX_DIR}/conf/nginx.conf:/etc/nginx/nginx.conf:ro -v ${NGINX_DIR}/conf.d:/etc/nginx/conf.d -v ${NGINX_DIR}/logs:/etc/nginx/logs nginx

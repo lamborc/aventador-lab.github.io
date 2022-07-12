@@ -154,3 +154,28 @@ optimization: {
 ````
 
 
+### lib 优化 
+
+#### lodash
+
+> vue-cli4 
+
+- vue.config.js 
+
+```js
+
+    config
+      .plugin('lodash-webpack-plugin')
+      .use(
+        new LodashModuleReplacementPlugin({ collections: true, paths: true })
+      )
+      .end()
+```
+
+- babelrc 
+
+  presets: ['@vue/cli-plugin-babel/preset'],
+
+<div align="center">
+    <img width="550px" src="/assets/img/optimization/lodash-optimize.png" />
+</div>
