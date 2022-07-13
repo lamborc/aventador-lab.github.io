@@ -175,6 +175,10 @@ optimization: {
 - babelrc 
 
   presets: ['@vue/cli-plugin-babel/preset'],
+  
+META_API_BASE=https://front.planet2nd.com
+STATIC_BASE=https://front.planet2nd.com
+NODE_API_BASE=https://front.planet2nd.com
 
 <div align="center">
     <img width="550px" src="/assets/img/optimization/lodash-optimize.png" />

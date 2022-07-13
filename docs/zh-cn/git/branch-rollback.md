@@ -14,6 +14,13 @@
   
 ```
 
+### 从某一个commit开始创建本地分支  
+
+```bash
+git log 查看提交
+git checkout commitId -b newbranch // 通过checkout 跟上commitId 即可创建制定commit之前的本地分支
+```
+
 ### git stash
 
 > stash 命令能够将还未 commit 的代码存起来，让你的工作目录变得干净。

@@ -249,7 +249,7 @@ set http_proxy=http://127.0.0.1:10808
 set http_proxys=http://127.0.0.1:10808
 curl -v http://www.google.com
 
-set all_proxy=socks5://127.0.0.1:10808
+
 
 unset all_proxy
 ```
