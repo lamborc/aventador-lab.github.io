@@ -17,6 +17,8 @@
 ### 从某一个commit开始创建本地分支  
 
 ```bash
+# 查看 short hash
+git log -n 1 | head -n 1 | sed -e 's/^commit //' | head -c 8 
 git log 查看提交
 git checkout commitId -b newbranch // 通过checkout 跟上commitId 即可创建制定commit之前的本地分支
 ```
@@ -221,3 +223,28 @@ git log    // 查看commit list
 git diff hash1 hash2 --stat         // 对比所有更改
 git diff hash hash ./file 
 ```
+
+-----
+
+## 对比两次提交具体文件差别
+
+```bash
+git reflog # 查看版本提交记录
+
+```
+
+59f6605 HEAD@{4}: checkout: moving from dev-main to local-dev
+9b3e815 HEAD@{5}: merge local-dev: Merge made by the 'recursive' strategy.
+
+### 查看暂存区与具体某个版本之间的区别
+
+git diff --cached bd71480 -- src/views/faq/faq-index.vue
+
+- git diff 什么参数都不加，默认比较工作区暂存区的差异
+- git diff --cached [<path>...]比较暂存区与最新本地版本库（本地库中最近一次commit的内容）
+- git diff HEAD [<path>...]比较工作区与最新本地版本库。如果HEAD指向的是master分支，那么HEAD还可以换成master
+- git diff commit-id [<path>...]比较工作区与指定commit-id的差异
+- git diff --cached [<commit-id>] [<path>...]比较暂存区与指定commit-id的差异
+- git diff [<commit-id>] [<commit-id>]比较两个commit-id之间的差异
+- git diff commit-id1 commit-id2 --stat查看两个提交版本id修改了那些文件.
+- git diff 版本号码1 版本号码2 src 比较两个版本的src 文件夹的差异

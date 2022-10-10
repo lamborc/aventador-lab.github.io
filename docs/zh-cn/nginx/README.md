@@ -95,3 +95,13 @@ NGINX_DIR=`pwd`
 docker stop nginx
 docker rm nginx
 docker run -d --restart always -p 80:80 --name nginx --privileged=true -v /opt/nft-service:/data/java -v ${NGINX_DIR}/conf/nginx.conf:/etc/nginx/nginx.conf:ro -v ${NGINX_DIR}/conf.d:/etc/nginx/conf.d -v ${NGINX_DIR}/logs:/etc/nginx/logs nginx
+
+
+### Nginx 
+    location / {
+      try_files $uri $uri/ @router;
+    }
+
+    location @router {
+      rewrite ^.*$ /index.html last;
+    }

@@ -51,3 +51,6 @@ git branch -D 3.0.2 # 删除本地分支
 
 ```
 
+> 
+git log -n 1 | head -n 1 | sed -e 's/^commit //' | head -c 8 
+

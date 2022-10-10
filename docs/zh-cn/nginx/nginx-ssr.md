@@ -19,8 +19,8 @@ firewall-cmd --reload
 ```bash 
 firewall-cmd --zone=public --add-port=80/tcp --permanent
 firewall-cmd --zone=public --add-port=443/tcp --permanent
-firewall-cmd --zone=public --add-port=37000-39999/tcp --permanent
-firewall-cmd --zone=public --add-port=37000-39999/udp --permanent
+firewall-cmd --zone=public --add-port=28000-29999/tcp --permanent
+firewall-cmd --zone=public --add-port=28000-29999/udp --permanent
 firewall-cmd --reload
 ### 
 
@@ -103,7 +103,7 @@ server {
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" />
-    <title>Welcome My Blog</title>
+    <title>Welcome World</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
@@ -159,9 +159,10 @@ server {
 yum install epel-release
 yum install snapd
 systemctl enable --now snapd.socket # 添加snap启动通信 socket
-ln -s /var/lib/snapd/snap /snap # 创建链接（snap软件包一般安装在/snap目录下）非常重要
+systemctl enable --now snapd.socket # 创建链接（snap软件包一般安装在/snap目录下）非常重要
 sudo snap install core     # 
 sudo snap refresh core     # 
+ln -s /var/lib/snapd/snap /snap # 创建链接
 ```
 
 
@@ -252,4 +253,92 @@ curl -v http://www.google.com
 
 
 unset all_proxy
+
+yum intall net-tool
+```
+
+### Linux 安装脚本
+-- 以下转自 [https://www.v2ray.com/chapter_00/install.html]
+
+V2Ray 提供了一个在 Linux 中的自动化安装脚本。这个脚本会自动检测有没有安装过 V2Ray，如果没有，则进行完整的安装和配置；如果之前安装过 V2Ray，则只更新 V2Ray 二进制程序而不更新配置。
+
+以下指令假设已在 su 环境下，如果不是，请先运行 sudo su。
+
+运行下面的指令下载并安装 V2Ray。当 yum 或 apt-get 可用的情况下，此脚本会自动安装 unzip 和 daemon。这两个组件是安装 V2Ray 的必要组件。如果你使用的系统不支持 yum 或 apt-get，请自行安装 unzip 和 daemon
+
+### install 
+bash <(curl -L -s https://install.direct/go.sh)
+https://github.com/v2fly/fhs-install-v2ray/wiki/Migrate-from-the-old-script-to-this
+
+此脚本会自动安装以下文件：
+
+/usr/bin/v2ray/v2ray：V2Ray 程序；
+/usr/bin/v2ray/v2ctl：V2Ray 工具；
+/etc/v2ray/config.json：配置文件；
+/usr/bin/v2ray/geoip.dat：IP 数据文件
+/usr/bin/v2ray/geosite.dat：域名数据文件
+
+
+此脚本会配置自动运行脚本。自动运行脚本会在系统重启之后，自动运行 V2Ray。目前自动运行脚本只支持带有 Systemd 的系统，以及 Debian / Ubuntu 全系列。
+
+运行脚本位于系统的以下位置：
+
+/etc/systemd/system/v2ray.service: Systemd
+/etc/init.d/v2ray: SysV
+脚本运行完成后，你需要：
+
+编辑 /etc/v2ray/config.json 文件来配置你需要的代理方式；
+运行 service v2ray start 来启动 V2Ray 进程；
+之后可以使用 service v2ray start|stop|status|reload|restart|force-reload 控制 V2Ray 的运行。
+
+
+### Config
+https://github.com/v2fly/v2ray-examples
+
+```json 
+{
+    "log": {
+        "loglevel": "warning"
+    },
+    "routing": {
+        "domainStrategy": "AsIs",
+        "rules": [
+            {
+                "type": "field",
+                "ip": [
+                    "geoip:private"
+                ],
+                "outboundTag": "block"
+            }
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 58966,
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "b4175774-40dd-4493-9d1e-b43276dda55d"
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp"
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ]
+}
+
 ```
